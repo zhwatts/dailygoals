@@ -1,4 +1,4 @@
-# Daily Goals | A lightweight Task Logger
+# Daily Goals | A lightweight task logger
 Intended to be an integrated focus period timer and daily task logger with built in reporting functionality
 
 ## Platform Support
