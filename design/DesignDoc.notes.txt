@@ -31,6 +31,7 @@ Properties of a task :
         > abandoned
         > parked
         > paused
+        > postpone
 
 Potential UI buttons per task   :
     - start focus round
