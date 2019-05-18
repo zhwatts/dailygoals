@@ -22,7 +22,7 @@ Functions:
 
 - limit number of tasks per day, forward all past that limit to next day
 - have emergency priority button
-
+- click timer to toggle between count up and count down displays 
 Properties of a task :
     - Title
     - Description
