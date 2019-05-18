@@ -1,7 +1,7 @@
 # Daily Goals | A lightweight task logger
 Intended to be an integrated focus period timer and daily task logger with built in reporting functionality
 
-![Daily Goals Mockup](http://zachwatts.online/github-images/dailyGoals_mockup.png)
+<img src="http://zachwatts.online/github-images/dailyGoals_mockup.png" style="display: block; margin: 0px auto;" alt="Daily Goals Mockup" title="Daily Goals Mockup" />
 
 ## Platform Support
     - Node Web Application
