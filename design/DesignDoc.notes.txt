@@ -69,4 +69,4 @@ Order of Operations :
 
 Settings    :
     - length of time = to one focus period
-    - 
+    - forced breaks
