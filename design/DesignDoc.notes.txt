@@ -20,6 +20,9 @@ Functions:
     - should be able to add points to a task if the user does not know how much time was spent, or was multi tasking
     - should be able to enter "multi task" periods, where each selected "multi task" divides the amount of time specified
 
+- limit number of tasks per day, forward all past that limit to next day
+- have emergency priority button
+
 Properties of a task :
     - Title
     - Description
