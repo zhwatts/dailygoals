@@ -1,0 +1,49 @@
+|-----------------------
+
+    app name        : Daily Goals
+    Design Version  : 1.0.0
+    Author          : zhwatts
+    Date            : 2019-05-17
+    Premise         :
+        An app where a user can add tasks they have completed through out the day, and add how much time was spent on the task
+        an example would be a pomodoro timer with built in task listing
+        
+|-----------------------
+
+Functions:
+    - Insert new tasks
+    - Start a new "focus round" on that task
+        > Should be able to perform subsequent focus rounds on that task with single click
+    - should be able to add blocks of time to the task outside of focus periods
+    - should be able to track breaks and distractions
+    - should be able to run reports of total time tracked, and percent of time allocated to what task
+    - should be able to add points to a task if the user does not know how much time was spent, or was multi tasking
+    - should be able to enter "multi task" periods, where each selected "multi task" divides the amount of time specified
+
+Properties of a task :
+    - Title
+    - Description
+    - Total focus periods
+    - total "untracked" time blocks
+    - Status 
+        > complete
+        > in progress
+        > abandoned
+        > parked
+        > paused
+
+Potential UI buttons per task   :
+    - start focus round
+    - add block time
+    - award point
+    - edit property
+    - update status
+    - pause a focus period
+    - end/ stop a focus period early
+        > if a user stops or end a focus period early, the get the percent points for completed time
+
+Global UI buttons   :
+    - log distraction
+    - add new task
+    - begin multi tasking
+    - run daily report

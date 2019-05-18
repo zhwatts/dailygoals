@@ -1,0 +1,12 @@
+{
+  "name": "daily-goals",
+  "version": "0.0.1",
+  "description": "Light weight, modern, easy to use task tracking app",
+  "main": "main.js",
+  "author": "zhwatts",
+  "license": "no",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
