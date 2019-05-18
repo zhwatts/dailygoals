@@ -48,3 +48,25 @@ Global UI buttons   :
     - add new task
     - begin multi tasking
     - run daily report
+
+
+Time Tracking       :
+    - focus time
+    - multitask time
+    - paused time
+
+Incremental counters :
+    - distractions
+    - number of rounds completed
+    - number of multi tasks per round
+    - number of pauses
+    - number of stopped rounds
+
+
+Order of Operations :
+    - if user is in a "focus" period, they can select another task and convert it to a "multi task", but they cannot convert a "multi task" to a focus period
+
+
+Settings    :
+    - length of time = to one focus period
+    - 
