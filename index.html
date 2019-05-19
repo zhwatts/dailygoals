@@ -46,7 +46,7 @@
                 </li>
                 
                 <li>
-                    <button>
+                    <button role="break-btn">
                         <span>
                             <i class="fas fa-bed"></i>Take Break
                         </span>
@@ -55,6 +55,35 @@
             </ul>
         </section><!-- section[role="timer-container"] -->
 
+        <section id="task-list-container">
+            <ul id="task-list">
+                <li>
+                    <span>
+                        Create photoshop mockup of new app design and establish parent color scheme
+                    </span>
+
+                    <ul class="task-specific-btn-list">
+                        <li role="toggle-focus-btn"><i class="fas fa-chevron-right"></i></li>
+                        <span style="display: none;" class="focus-btns">
+
+                            <li role="focus-btn">focus</li>
+                            <li role="multi-btn">multi</li>
+                        </span>
+                    </ul>
+                </li>
+                <li>
+                    <span>
+                        Document class structure, function outlines, and expected architectue + platform support
+                    </span>
+
+                    <ul class="task-specific-btn-list">
+                        <li><i class="fas fa-clock"></i></li>
+                    </ul>
+                </li>
+
+                
+            </ul>
+        </section>
     </body>
 
     <script src="./src/webpacked/vendor.js"></script>
