@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Daily Goals | What did you accomplish today?</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Daily Goals | What did you accomplish today?</title>
 
-    <link href="./src/style/css/style.css" rel="stylesheet" type="text/css" />
-    
-</head>
-<body>
-    <i class="fas fa-exclamation-triangle"></i>
-</body>
+        <link href="./src/style/css/style.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+    <body>
+
+        <section id="timer-container">
+            <ul id="timer-display">
+                <li role="pause-time-btn" class="timer-btn">
+                    <i class="fas fa-pause"></i>
+                </li>
+                <li role="time">
+                    <time>00:00</time>
+                </li>
+                <li role="stop-time-btn"  class="timer-btn">
+                    <i class="fas fa-stop"></i>
+                </li>
+            </ul>
+        </section><!-- section[role="timer-container"] -->
+
+    </body>
+
+    <script src="./src/webpacked/vendor.js"></script>
+    <script src="./src/webpacked/index_ui.js"></script>
+
+    <script>
+
+    </script>
 </html>
