@@ -1,6 +1,7 @@
 const {moment} = require('./vendor.js');
 
 var countDownTime = 300;
+$('li[role="time"] time').html(moment.duration(countDownTime, 'seconds').format('mm:ss'));
 
 var timer = moment.duration(1, "seconds").timer({
     loop: true

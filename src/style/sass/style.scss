@@ -6,6 +6,7 @@
  *
  * 00.01 GLOBAL & IMPORTS
  * 01.00 Timer Section
+ * 01.01 Focus Button List
  *
  */
 
@@ -27,8 +28,15 @@
 
 
  ul, li{
-     margin  : 0;
-     padding : 0;
+     margin     : 0;
+     padding    : 0;
+     list-style : none;
+ }
+
+ button{
+     border     : 0;
+     background : inherit;
+     cursor     : pointer;
  }
  
  html, body{
@@ -66,11 +74,53 @@ li[role="time"] time{
 }
 
 li[role="stop-time-btn"] i, li[role="pause-time-btn"] i{
-    $color        : #4f4f4f;
+    $color        : #333;
     
     border        : 3px solid $color;
     border-radius : 100%;
     color         : $color;
     cursor        : pointer;
     padding       : 8px;
+}
+
+div[role="progress-bar-track"]{
+    height : 10px;
+    width  : 100%;
+
+    background: transparentize(#111, .8);
+
+    span[role="progress-bar"]{
+        display : block;
+        height  : 100%;
+        width   : 30%;
+
+        background : transparentize(#111, .5);
+    }
+}
+
+/** 01.01 Focus Button List **/
+
+ul[id="focus-btn-list"]{
+    background: transparentize(rgb(9, 194, 40), .3);
+    display         : flex;
+
+    justify-content : center;
+    padding: 15px 0;
+
+    button{
+        display: flex;
+        width: 180px;
+        
+        font-size: 16px;
+    }
+    
+    span{
+        width: 100%;
+        
+        text-align: center;
+
+        i{
+            margin-right: 5px;
+        }
+    }
 }
