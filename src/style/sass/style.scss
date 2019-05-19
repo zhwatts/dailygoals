@@ -1,0 +1,35 @@
+// !IMPORTANT DO NOT EDIT DIRECTLY, THIS DOC IS MAINTAINED WITH SASS
+
+/*
+ *
+ * 00.00 TOC
+ *
+ * 00.01 GLOBAL & IMPORTS
+ *
+ */
+
+ /** 00.01 GLOBAL & IMPORTS **/
+
+ $nodeModules: '../../../node_modules';
+ 
+ @import url('#{$nodeModules}/@fortawesome/fontawesome-free/css/fontawesome.min.css');
+ @import url('#{$nodeModules}/@fortawesome/fontawesome-free/css/solid.min.css');
+ @import url('#{$nodeModules}/@fortawesome/fontawesome-free/css/regular.min.css');
+
+ *{
+     background : #333;
+     box-sizing : border-box;
+     color      : #fff;
+     position   : relative;
+
+ }
+ 
+ html, body{
+     margin  : 0;
+     padding : 0;
+ }
+
+ i{
+     color     : #00ff00;
+     font-size : 20px;
+ }

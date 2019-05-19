@@ -20,6 +20,9 @@ Functions:
     - should be able to add points to a task if the user does not know how much time was spent, or was multi tasking
     - should be able to enter "multi task" periods, where each selected "multi task" divides the amount of time specified
 
+    - count up mode vs. count down mode
+    - concept of daily checkin
+
 Properties of a task :
     - Title
     - Description

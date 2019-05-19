@@ -1,0 +1,30 @@
+/*
+ *
+ * 00.00 TOC
+ *
+ * 00.01 GLOBAL & IMPORTS
+ *
+ */
+/** 00.01 GLOBAL & IMPORTS **/
+@import url("../../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css");
+@import url("../../../node_modules/@fortawesome/fontawesome-free/css/solid.min.css");
+@import url("../../../node_modules/@fortawesome/fontawesome-free/css/regular.min.css");
+/* line 19, ../sass/style.scss */
+* {
+  background: #333;
+  box-sizing: border-box;
+  color: #fff;
+  position: relative;
+}
+
+/* line 27, ../sass/style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 32, ../sass/style.scss */
+i {
+  color: #00ff00;
+  font-size: 20px;
+}
