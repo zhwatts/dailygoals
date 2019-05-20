@@ -1,6 +1,12 @@
 const {moment} = require('./vendor.js');
 
 var countDownTime = 300;
+var countUpTime   = 0;
+
+    $('div[role="progress-bar-track"]').progressbar({
+        value: 50
+    });
+
 $('li[role="time"] time').html(moment.duration(countDownTime, 'seconds').format('mm:ss'));
 
 var timer = moment.duration(1, "seconds").timer({
@@ -15,7 +21,14 @@ var timer = moment.duration(1, "seconds").timer({
     var timeRemaining = moment.duration(countDownTime, 'seconds').format('mm:ss');    
     $('li[role="time"] time').html( timeRemaining );
 
+    console.log(((countUpTime * 100) / countDownTime));
+
+    $('div[role="progress-bar-track"]').progressbar({
+        value: (countUpTime*100)/countDownTime
+    });
+
     countDownTime--;
+    countUpTime++;
 });
 
 $('li[role="pause-time-btn"] i').click(
@@ -53,8 +66,19 @@ $('button[role="break-btn"]').click(
 $('li[role="toggle-focus-btn"]').click(
     () => {
         // alert('Periodical breaks are important to mental health, total break time is tracked as a single variable throughout the day. Break period durations are specified in the settings tab');
-        // $('span[class="focus-btns"]').toggle("slide");
-        $('li[role="focus-btn"], li[role="multi-btn"]').toggle("slide", { direction: "right" }, 200);
+
+        if ( $('span[class="focus-btns"]').css('margin-right') == '-120px' ) {
+            $('span[class="focus-btns"]').animate({
+                marginRight: "0"}, 100);
+            }
+        else if ($('span[class="focus-btns"]').css('margin-right') == '0px' ){
+            $('span[class="focus-btns"]').animate({
+                marginRight: "-120px"}, 100);
+        }
+            
+            
+        // $('li[role="focus-btn"], li[role="multi-btn"]').toggle("slide", { direction: "left" }, 500);
+
         $('span[class="focus-btns"]').css('display','flex');
         $('li[role="toggle-focus-btn"] i').toggleClass('fa-clock fa-chevron-right');
     }

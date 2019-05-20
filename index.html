@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+        <meta http-equiv="Content-Security-Policy" content="connect-src 'self'">
+        <meta http-equiv="Content-Security-Policy" content="style-src 'self'">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self'"> -->
+        
         <title>Daily Goals | What did you accomplish today?</title>
 
         <link href="./src/style/css/style.css" rel="stylesheet" type="text/css" />
@@ -25,7 +30,7 @@
             </ul>
             
             <div role="progress-bar-track">
-                <span role="progress-bar"></span>
+                <!-- <span role="progress-bar"></span> -->
             </div>
 
             <ul id="focus-btn-list">
@@ -64,14 +69,14 @@
 
                     <ul class="task-specific-btn-list">
                         <li role="toggle-focus-btn"><i class="fas fa-clock"></i></li>
-                        <!-- <span style="display: flex; padding: 0;width: 100%;" class="focus-btns"> -->
+                        <span style="display: flex; padding: 0;width: auto;margin-right: -120px;" class="focus-btns">
 
-                            <li role="focus-btn" style="display: none;line-height: 40px;">focus</li>
-                            <li role="multi-btn" style="display: none;line-height: 40px;">multi</li>
-                        <!-- </span> -->
+                            <li role="focus-btn" style="line-height: 40px;width: 60px;">focus</li>
+                            <li role="multi-btn" style="line-height: 40px;width: 60px;">multi</li>
+                        </span>
                     </ul>
                 </li>
-                <li>
+                <!-- <li>
                     <span>
                         Document class structure, function outlines, and expected architectue + platform support
                     </span>
@@ -79,8 +84,14 @@
                     <ul class="task-specific-btn-list">
                         <li><i class="fas fa-clock"></i></li>
                     </ul>
-                </li>
+                </li> -->
 
+
+
+                <li id="task-list-main-btns">
+                    <i class="fas fa-plus" style="padding: 20px; border-radius: 100px; border:6px solid #00ff00;font-weight: bold;font-size: 16px; color: #00ff00;"></i>
+                </li>
+                
                 
             </ul>
         </section>
