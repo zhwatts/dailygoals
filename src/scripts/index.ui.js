@@ -53,8 +53,10 @@ $('button[role="break-btn"]').click(
 $('li[role="toggle-focus-btn"]').click(
     () => {
         // alert('Periodical breaks are important to mental health, total break time is tracked as a single variable throughout the day. Break period durations are specified in the settings tab');
-        $('span[class="focus-btns"]').slideToggle();
+        // $('span[class="focus-btns"]').toggle("slide");
+        $('li[role="focus-btn"], li[role="multi-btn"]').toggle("slide", { direction: "right" }, 200);
         $('span[class="focus-btns"]').css('display','flex');
+        $('li[role="toggle-focus-btn"] i').toggleClass('fa-clock fa-chevron-right');
     }
 )
 

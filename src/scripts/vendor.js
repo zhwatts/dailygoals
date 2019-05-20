@@ -1,4 +1,5 @@
-window.$ = window.jQuery = require("jquery");
+require('webpack-jquery-ui');
+require('webpack-jquery-ui/css');
 
 const moment =  require('moment');
                 require('moment-duration-format');
