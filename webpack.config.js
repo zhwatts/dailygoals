@@ -14,12 +14,17 @@ module.exports = {
     resolve: {
         alias: {
             // jquery: 'dist/jquery.js'
+            Handlebars: 'handlebars/dist/handlebars.js'
         }
     },
     module: {
         rules: [{
                 test: /\.css$/,
                 loaders: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.handlebars$/,
+                loader: "handlebars-loader"
             },
             {
                 test: /\.(jpe?g|png|gif)$/i,

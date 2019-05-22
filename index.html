@@ -29,9 +29,9 @@
                 </li>
             </ul>
             
-            <div role="progress-bar-track">
+            <progress value="80" role="progress-bar-track" max="100">
                 <!-- <span role="progress-bar"></span> -->
-            </div>
+            </progress>
 
             <ul id="focus-btn-list">
                 <li>
@@ -62,31 +62,22 @@
 
         <section id="task-list-container">
             <ul id="task-list">
-                <li>
-                    <span>
-                        Create photoshop mockup of new app design and establish parent color scheme
-                    </span>
-
-                    <ul class="task-specific-btn-list">
-                        <li role="toggle-focus-btn"><i class="fas fa-clock"></i></li>
-                        <span style="display: flex; padding: 0;width: auto;margin-right: -120px;" class="focus-btns">
-
-                            <li role="focus-btn" style="line-height: 40px;width: 60px;">focus</li>
-                            <li role="multi-btn" style="line-height: 40px;width: 60px;">multi</li>
-                        </span>
-                    </ul>
-                </li>
-                <!-- <li>
-                    <span>
-                        Document class structure, function outlines, and expected architectue + platform support
-                    </span>
-
-                    <ul class="task-specific-btn-list">
-                        <li><i class="fas fa-clock"></i></li>
-                    </ul>
-                </li> -->
-
-
+                    <script id="task-template" type="text/x-handlebars-template">
+                            <li>
+                                <span>
+                                    {{content}}
+                                </span>
+                            
+                                <ul class="task-specific-btn-list">
+                                    <li role="toggle-focus-btn"><i class="fas fa-clock"></i></li>
+                                    <span style="display: flex; padding: 0;width: auto;margin-right: -120px;" class="focus-btns">
+                            
+                                        <li role="focus-btn" style="line-height: 40px;width: 60px;">focus</li>
+                                        <li role="multi-btn" style="line-height: 40px;width: 60px;">multi</li>
+                                    </span>
+                                </ul>
+                            </li>
+                        </script>
 
                 <li id="task-list-main-btns">
                     <i class="fas fa-plus" style="padding: 20px; border-radius: 100px; border:6px solid #00ff00;font-weight: bold;font-size: 16px; color: #00ff00;"></i>
@@ -100,7 +91,4 @@
     <script src="./src/webpacked/vendor.js"></script>
     <script src="./src/webpacked/index_ui.js"></script>
 
-    <script>
-
-    </script>
 </html>

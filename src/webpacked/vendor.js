@@ -2724,7 +2724,7 @@ eval("__webpack_require__(/*! jquery-ui/ui/widget */ \"./node_modules/jquery-ui/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! webpack-jquery-ui */ \"./node_modules/webpack-jquery-ui/index.js\");\n__webpack_require__(/*! webpack-jquery-ui/css */ \"./node_modules/webpack-jquery-ui/css.js\");\n\nconst moment =  __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n                __webpack_require__(/*! moment-duration-format */ \"./node_modules/moment-duration-format/lib/moment-duration-format.js\");\n                __webpack_require__(/*! moment-timer */ \"./node_modules/moment-timer/lib/moment-timer.js\");\n\n\nmodule.exports = {\n    moment   : moment\n}\n\n//# sourceURL=webpack:///./src/scripts/vendor.js?");
+eval("__webpack_require__(/*! webpack-jquery-ui */ \"./node_modules/webpack-jquery-ui/index.js\");\n__webpack_require__(/*! webpack-jquery-ui/css */ \"./node_modules/webpack-jquery-ui/css.js\");\n\nconst moment =  __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n                __webpack_require__(/*! moment-duration-format */ \"./node_modules/moment-duration-format/lib/moment-duration-format.js\");\n                __webpack_require__(/*! moment-timer */ \"./node_modules/moment-timer/lib/moment-timer.js\");\n\n// const template = require(\"handlebars\");\n\nmodule.exports = {\n    moment     : moment,\n    // handlebars : template\n}\n\n//# sourceURL=webpack:///./src/scripts/vendor.js?");
 
 /***/ })
 

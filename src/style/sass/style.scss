@@ -102,13 +102,15 @@ li[role="stop-time-btn"] i, li[role="pause-time-btn"] i{
 }
 
 
-div[role="progress-bar-track"], .ui-progressbar{
+progress[role="progress-bar-track"], .ui-progressbar{
+    display: block;
     height : 10px !important;
     width  : 100%;
 
     background: transparentize(#111, .8) !important;
-    border: 0 !important;
+    // border: 0 !important;
     border-radius: 0 !important;
+    // transition: all 1s;
 
     span[role="progress-bar"], .ui-progressbar-value{
         display : block;
@@ -116,9 +118,14 @@ div[role="progress-bar-track"], .ui-progressbar{
         width   : 30%;
 
         background : transparentize(#111, .5) !important;
-        border: 0 !important;
+        // border: 0 !important;
         border-radius: 0 !important;
+        border: 10px solid #000;
     }
+}
+
+progress[value]{
+    transition : width .2s ease;
 }
 
 /** 01.01 Focus Button List **/

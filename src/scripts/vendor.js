@@ -5,7 +5,9 @@ const moment =  require('moment');
                 require('moment-duration-format');
                 require('moment-timer');
 
+// const template = require("handlebars");
 
 module.exports = {
-    moment   : moment
+    moment     : moment,
+    // handlebars : template
 }

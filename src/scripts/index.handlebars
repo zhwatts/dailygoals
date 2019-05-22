@@ -79,20 +79,28 @@ $('li[role="toggle-focus-btn"]').click(
 )
 
 
-// Grab the template script
-var theTemplateScript = $("#task-template").html();
 
-// Compile the template
-var theTemplate = Handlebars.compile(theTemplateScript);
 
-// Define our data object
-var context = {
-    "content": 'Give Bella a hug!'
-};
 
-// Pass our data to the template
-var theCompiledHtml = theTemplate(context);
 
-// Add the compiled html to the page
-// $('.content-placeholder').html(theCompiledHtml);
-$('#task-list').append(theCompiledHtml);
+
+
+
+    // Grab the template script
+    var theTemplateScript = $("#task-template").html();
+
+    // Compile the template
+    var theTemplate = Handlebars.compile(theTemplateScript);
+
+    // Define our data object
+    var context = {
+        "content": 'Give Bella a hug!'
+    };
+
+    // Pass our data to the template
+    var theCompiledHtml = theTemplate(context);
+
+    // Add the compiled html to the page
+    // $('.content-placeholder').html(theCompiledHtml);
+    $('#task-list').append(theCompiledHtml);
+

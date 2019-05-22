@@ -97,56 +97,61 @@ li[role="stop-time-btn"] i, li[role="pause-time-btn"] i {
 }
 
 /* line 105, ../sass/style.scss */
-div[role="progress-bar-track"], .ui-progressbar {
+progress[role="progress-bar-track"], .ui-progressbar {
+  display: block;
   height: 10px !important;
   width: 100%;
   background: rgba(17, 17, 17, 0.2) !important;
-  border: 0 !important;
   border-radius: 0 !important;
 }
-/* line 113, ../sass/style.scss */
-div[role="progress-bar-track"] span[role="progress-bar"], div[role="progress-bar-track"] .ui-progressbar-value, .ui-progressbar span[role="progress-bar"], .ui-progressbar .ui-progressbar-value {
+/* line 115, ../sass/style.scss */
+progress[role="progress-bar-track"] span[role="progress-bar"], progress[role="progress-bar-track"] .ui-progressbar-value, .ui-progressbar span[role="progress-bar"], .ui-progressbar .ui-progressbar-value {
   display: block;
   height: 100%;
   width: 30%;
   background: rgba(17, 17, 17, 0.5) !important;
-  border: 0 !important;
   border-radius: 0 !important;
+  border: 10px solid #000;
+}
+
+/* line 127, ../sass/style.scss */
+progress[value] {
+  transition: width .2s ease;
 }
 
 /** 01.01 Focus Button List **/
-/* line 126, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 ul[id="focus-btn-list"] {
   background: rgba(9, 194, 40, 0.7);
   display: flex;
   justify-content: center;
   padding: 15px 0;
 }
-/* line 133, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 ul[id="focus-btn-list"] button {
   display: flex;
   width: 180px;
   font-size: 16px;
 }
-/* line 140, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 ul[id="focus-btn-list"] span {
   width: 100%;
   text-align: center;
 }
-/* line 145, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 ul[id="focus-btn-list"] span i {
   margin-right: 5px;
 }
 
 /** 02.00 Task list Container **/
-/* line 153, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 section[id="task-list-container"] {
   flex-grow: 2;
   padding: 10px;
   padding-bottom: 0;
 }
 
-/* line 159, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 ul[id="task-list"] {
   display: flex;
   height: 100%;
@@ -157,20 +162,20 @@ ul[id="task-list"] {
   font-family: "PT Sans", Courier, monospace;
   overflow: hidden;
 }
-/* line 170, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 ul[id="task-list"] li {
   display: flex;
   border-bottom: 1px dotted #dfdfdf;
   font-size: 13px;
 }
-/* line 177, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 ul[id="task-list"] li span {
   width: 70%;
   padding: 5px;
   padding-bottom: 0;
 }
 
-/* line 187, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 ul[class="task-specific-btn-list"] {
   display: flex;
   height: 40px;
@@ -178,7 +183,7 @@ ul[class="task-specific-btn-list"] {
   justify-content: flex-end;
   text-align: center;
 }
-/* line 195, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 ul[class="task-specific-btn-list"] li {
   display: block;
   background: #54e054;
@@ -186,23 +191,23 @@ ul[class="task-specific-btn-list"] li {
   cursor: pointer;
   padding: 0 12px;
 }
-/* line 204, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 ul[class="task-specific-btn-list"] li i {
   line-height: 40px;
 }
-/* line 209, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 ul[class="task-specific-btn-list"] li[role="focus-btn"] {
   background: #333;
   color: #fff;
 }
-/* line 215, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 ul[class="task-specific-btn-list"] li[role="multi-btn"] {
   background: transparent;
   color: #bbb;
 }
 
 /** 03.00 Task list main buttons **/
-/* line 224, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 li[id="task-list-main-btns"] {
   border-bottom: 0 !important;
   border-top: 2px solid #dfdfdf;
